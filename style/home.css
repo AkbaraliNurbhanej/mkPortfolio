@@ -1,0 +1,214 @@
+body {
+    background-image: url('../img/dev-policy-bg@2x-9489caa49496.jpg');
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .hero-section {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .hero-section h1 span {
+    color: #ff4a4a;
+  }
+
+  .hero-section button {
+    background-color: #ff4a4a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .hero-section button:hover {
+    background-color: #e63e3e;
+  }
+
+  .hero-image {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background: url("../img/WhatsApp\ Image\ 2024-11-26\ at\ 12.17.15_6cfc375d.jpg") center center/cover no-repeat;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  #nav a.active {
+    color: #fff
+}
+
+#nav a.active::after, #nav a:hover::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background-color: #d70707;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#nav a {
+  padding: 0 20px;
+  position: relative;
+}
+
+
+/* about page */
+
+#detels{
+  padding: 30px 0; 
+}
+
+section{
+  color: #fff;
+}
+
+img{
+  height: 400px;
+  width: 400px;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info h1{
+  color: #d70707;
+}
+
+#container{
+  padding:10px;
+}
+
+#container h3,
+#skill-goups h3{
+color: #d70707;
+}
+
+
+
+#container .experience-buttons a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+#container .experience-buttons a:hover{
+  color: #d70707;
+}
+
+#container .button {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#container .button a{
+  font-size: 15px;
+  font-weight: 600;
+} 
+
+#container .button a:hover {
+  color:#d70707;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#container .hov{
+  padding: 20px;
+}
+#container .hov:hover{
+  background-color:#8da2fb1a ;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#topic{
+  display: flex;
+  padding:20px 10px;
+
+}
+
+#topic:hover{
+  border-radius: 20px;
+  background-color: #8da2fb1a;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#topic img{
+  padding-right: 40px;
+  height:200px;
+  width: 200px;
+}
+
+#skill-goups .skills{
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#skill-goups .skills:hover{
+  background-color:rgba(156, 163, 175,0.3);
+}
+
+#animeshan{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:30px ;
+}
+
+#animeshan div{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border:3px solid #fff;
+  position: relative;
+  animation: slide 4s infinite alternate;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@keyframes slide {
+  0% {
+      left: 0; /* Start from the left */
+  }
+  100% {
+      left: 300px; /* Move to the right */
+  }
+}
