@@ -2,6 +2,7 @@ body {
     background-image: url('../img/dev-policy-bg@2x-9489caa49496.jpg');
     color: #ffffff;
     font-family: 'Arial', sans-serif;
+    overflow: hidden;
   }
 
   .hero-section {
