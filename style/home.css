@@ -82,8 +82,7 @@ body {
 } */
 
 #nav {
-  background-color: transparent; /* Light background for better visibility */
-  position: sticky; /* Sticky header */
+  background-color: transparent; /* Light background for better visibility */ /* Sticky header */
   top: 0; /* Sticks to the top */
   z-index: 1000; /* Ensures it stays above other content */
 }
