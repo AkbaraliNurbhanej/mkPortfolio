@@ -14,7 +14,7 @@ body {
   }
 
   .hero-section h1 {
-    padding-top: 40px;
+    padding-top: 60px;
     font-size: 3rem;
     font-weight: bold;
   }
@@ -49,8 +49,8 @@ body {
 
   .hero-image{
     padding-left: 30px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-size: cover;
     background: url("../img/WhatsApp\ Image\ 2024-11-26\ at\ 12.17.15_6cfc375d.jpg") center center/cover no-repeat;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
