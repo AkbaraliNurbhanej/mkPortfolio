@@ -55,7 +55,7 @@ body {
     background: url("../img/WhatsApp\ Image\ 2024-11-26\ at\ 12.17.15_6cfc375d.jpg") center center/cover no-repeat;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
-
+/* 
   nav a {
     color: #ffffff;
     margin: 0 10px;
@@ -79,8 +79,46 @@ body {
 #nav a {
   padding: 0 20px;
   position: relative;
+} */
+
+#nav {
+  background-color: transparent; /* Light background for better visibility */
+  position: sticky; /* Sticky header */
+  top: 0; /* Sticks to the top */
+  z-index: 1000; /* Ensures it stays above other content */
 }
 
+#nav img {
+  height: 40px; /* Adjust logo size */
+  width: auto;
+}
+
+.nav-links a {
+  color: #fff;
+  /*Darkcolorforcontrast*/margin: 0 15px;
+  /*Addspacingbetweenlinks*/text-decoration: none;
+  /*Removeunderline*/font-weight: 500;
+  /*Slightlyboldforemphasis*/transition: color 0.3s ease-in-out;
+   /* Smooth color transition */:;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #d70707; /* Highlight on hover */
+}
+
+.nav-links .active {
+  color: #d70707; /* Highlight active link */
+  font-weight: 600; /* Slightly bolder for active link */
+  border-bottom: 2px solid #d70707; /* Bottom border for active state */
+}
+
+#itro{
+  
+}
 
 /* about page */
 
@@ -125,7 +163,15 @@ img{
 #info {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:space-around;
+  padding: 20px;
+}
+#info div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 
 #info h1{
@@ -135,6 +181,7 @@ img{
 
 #container{
   padding:10px;
+  width: 100%;
 }
 
 #container h3,
@@ -162,20 +209,18 @@ color: #d70707;
 #container .button a{
   font-size: 15px;
   font-weight: 600;
+  /* padding-right: 30px; */
 } 
 
 #container .button a:hover {
   color:#d70707;
-  padding: 5px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
-
-#container .hov{
+#container .hov {
   padding: 20px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 #container .hov:hover{
   background-color:#8da2fb1a ;
@@ -184,7 +229,47 @@ color: #d70707;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+} 
+
+section {
+  width: 100%; /* Full width */
+  padding: 50px 0; /* Add vertical padding */
+  background-color: transparent; /* Optional background color */
 }
+
+#education {
+  text-align: center; /* Center align text */
+  padding: 20px; /* Add padding inside */
+  background-color:#8da2fb1a ; /* White background for the content block */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+
+#education i {
+  font-size: 24px; /* Adjust icon size */
+  color: #d70707; /* Primary color for the icon */
+  margin-bottom: 10px; /* Space below the icon */
+}
+
+#education .hov {
+  margin-top: 15px;
+}
+
+#education .p {
+  font-weight: bold; /* Make the degree stand out */
+  margin-bottom: 5px;
+}
+
+#education address {
+  font-style: normal; /* Remove italic style */
+  color: #555; /* Muted text color */
+}
+
+#education .edu {
+  color: #007bff; /* Highlight the timeline */
+  font-weight: 500;
+}
+
 
 #topic{
   display: flex;
@@ -281,7 +366,7 @@ width: 40px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding-top: 40px;
+  padding: 40px 0;
 }
 
 #messages  .topic{
@@ -366,4 +451,20 @@ padding-bottom: 20px;
 #messages a:hover{
   background-color: #8da2fb1a;
   color: #ff4a4a;
+}
+
+#gif{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+@media (max-width:300px) {
+  #detels{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+}
 }
