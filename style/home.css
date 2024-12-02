@@ -236,6 +236,7 @@ section {
   width: 100%; /* Full width */
   padding: 50px 0; /* Add vertical padding */
   background-color: transparent; /* Optional background color */
+  overflow-x: hidden;
 }
 
 #education {
@@ -461,8 +462,3 @@ padding-bottom: 20px;
 }
 
 
-@media(max-width:400px) {
-  .nav-links{
-    display: flex;
-  }
-}
