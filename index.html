@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <!-- Bootstrap CSS -->
-   <link rel="icon" href="/img/icon.png">
-   <link rel="stylesheet" href="/style/home.css">
+  <link rel="icon" href="/img/icon.png">
+  <link rel="stylesheet" href="/style/home.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body id="frist-page">
+  <div>
 
   <header id="nav" class="d-flex justify-content-between align-items-center px-4 py-3">
     <img src="/img/icon.png" alt="">
@@ -18,27 +18,57 @@
       <div class="nav-links">
         <a class="active" href="#">Home</a>
         <a href="/about/about.html">About</a>
-        <a  href="/contact/contact.html">Contact</a>
+        <a href="/contact/contact.html">Contact</a>
       </div>
     </nav>
-</header>
+  </header>
 
   <section class="hero-section container">
-    <div class="conterner">
-      <div class="row">
-        <div class="col">
-          <div id="itro">
-            <h1>Hi, <br> I'm <span>Kasimali</span> <br>Flutter Developer</h1>
-            <button><a href="/contact/contact.html">Contact</a></button>
-          </div>    
+    <div class="row">
+      <div class="col">
+        <div id="itro">
+          <h1>Hi, <br> I'm <span>Kasimali</span> <br>Flutter Developer</h1>
+          <button><a href="/contact/contact.html">Contact</a></button>
         </div>
-        <div class="col">
-          <div class="hero-image"></div>
-        </div>
+      </div>
+      <div class="col">
+        <div class="hero-image"></div>
       </div>
     </div>
   </section>
-  </div>
+</div>
+
+  <script>
+    function createMovingShape() {
+      const shapes = document.querySelectorAll(".moving-shape");  
+      if (shapes.length > 9) return;
+      
+      var shape = document.createElement('div');
+      shape.classList.add('moving-shape');
+      
+      var width = Math.floor(Math.random() * (300 - 50 + 1)) + 50;
+      shape.style.width = width + 'px';
+      
+      var right = Math.floor(Math.random() * (window.innerWidth * 0.9 - (-50) + 1)) + (-50);
+      shape.style.right = right + 'px';
+      
+      var duration = Math.floor(Math.random() * (8 - 2 + 1)) + 2;
+      shape.style.animationDuration = duration + 's';
+      
+      var randomColor = 'rgb(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
+      shape.style.backgroundColor = randomColor;
+      
+      document.body.appendChild(shape);
+      
+      shape.addEventListener('animationend', function() {
+        shape.remove();
+      });
+    }
+
+    setInterval(createMovingShape, 4000);
+    createMovingShape();
+  </script>
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

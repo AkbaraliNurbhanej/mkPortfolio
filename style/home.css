@@ -3,6 +3,41 @@ body {
     color: #ffffff;
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
+    position: relative;
+  } 
+
+body #frist-page{
+    overflow: hidden;
+  }
+  .moving-shape {
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: rgba(128, 128, 128, 0.7);
+    opacity: 0.4;
+    position: absolute;
+    top: -500px;
+    z-index: -1;
+    animation: rotate-fall 5s linear;
+    animation-iteration-count: infinite;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  @keyframes rotate-fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      border-radius: 0;
+    }
+    50% {
+      transform: translateY(500px) rotate(900deg);
+      border-radius: 50%;
+    }
+    100% {
+      transform: translateY(calc(1000px)) rotate(1800deg);
+      border-radius: 0;
+    }
   }
 
   .hero-section {
